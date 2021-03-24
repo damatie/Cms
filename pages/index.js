@@ -1,11 +1,15 @@
 import Layout from '../components/layout'
+import TopDateFilter from '../components/topDateFilter'
 import StatBox from '../components/statBox'
 import StatBoxStyles from '../styles/components/statBox.module.css'
+import InputStyles from '../styles/components/input.module.css'
+
 export default function Dashboard(){
 	return(
 		<Layout>
 			<div className="container contentContainer" >
-				<div className="row mb-4">
+				<TopDateFilter></TopDateFilter>
+				<div className="row mb-4 ">
 					<div className="col-lg-3">
 						<div className={StatBoxStyles.statSmallBox}>
 							<h5>Registered Users</h5>
@@ -81,6 +85,47 @@ export default function Dashboard(){
 							</div>
 						</div>
 					</div>
+					{/* Ends Medium Stat Box */}
+
+					<div className="row mb-4" >
+						<div className="col-lg-12 ">
+							<div className={StatBoxStyles.statLargeBox}>
+								<div className="row ">
+									<div className="col-6 " style={{margin:"0px", paddingRight:"0px "}} >
+										<div className={StatBoxStyles.statLargeBoxHeader}>Top 12 User Keywords</div>
+										{/* Ends Header */}
+										<div className={StatBoxStyles.statLargeBoxBody}>
+											<div className="row">
+												<div className="col-lg-12" >
+													<div className={StatBoxStyles.statLargeChart}>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										{/* Ends Body */}
+									</div>
+
+									<div className="col-6" style={{margin:"0px", paddingLeft:"0px "}}>
+										<div className={StatBoxStyles.statLargeBoxHeader}>App Download</div>
+										{/* Ends Header */}
+										<div className={[StatBoxStyles.statLargeBoxBody, StatBoxStyles.borderLightGray].join(" ")}>
+											<div className="row">
+												<div className="col-lg-12 ">
+													<div className={StatBoxStyles.statLargeChart}>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+										{/* Ends Body */}
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					{/* Ends Large Stat Box */}
 
 			</div>
 		</Layout>

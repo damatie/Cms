@@ -88,16 +88,16 @@ export default function SideNav(){
 				</li>
 			
 					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
-						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#collapseChildNav" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="material-icons " > view_agenda</i> Task
+					<Link href="/#">
+						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="material-icons " > view_agenda</i> Task
 						 <i className="material-icons" style={{marginTop:"-10px", float:"right"}}> keyboard_arrow_right</i> </a> 
 					</Link>
 					</li>
 					
 					<ul className={SideNavStyles.navChild}>
-					<div className="collapse" id="collapseChildNav"  >
+					<div className="collapse" id="task"  >
 					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
+					<Link href="/users-management">
 						<a>  <i className="material-icons"> group</i>Users Management  </a>
 					</Link>
 					</li>

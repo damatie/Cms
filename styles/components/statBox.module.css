@@ -31,7 +31,7 @@
 	margin-bottom: 5px;
 	border: 1px solid #E7E7E7;
 	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 3px;
  }
 
  .statMediumBox h5{
@@ -69,3 +69,40 @@
 	height: 250px;
 }
 
+.statLargeBox{
+	background:white;
+	height:auto;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	border: 1px solid #E7E7E7;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+.statLargeBox .statLargeBoxHeader{
+	background: none;
+	padding: 20px 30px;
+	font-size: 15px;
+	margin-top: 0px;
+	
+}
+
+.statLargeBox .statLargeBoxBody{
+	background:none;
+	border-top: 1px solid #E7E7E7;
+	background: none;
+}
+
+.statLargeBox .statLargeChart{
+	padding: 20px 30px;
+	width: 100%;
+	height: 350px;
+	margin-bottom:10px ;
+	background:white;
+	/* border-right: 1px solid #E7E7E7; */
+}
+
+.borderLightGray{
+  border-left:solid 1px#E7E7E7 !important;
+}
+												

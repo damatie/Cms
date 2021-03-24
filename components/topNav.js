@@ -18,7 +18,7 @@ export default function TopNav(){
 		}
 	}
 	return(
-		<div className="container mb-5 ">
+		<div className="container  ">
 			<div className="row" style={{background:"none", borderBottom:" 1px solid #E7E7E7", paddingLeft:"30px",paddingRight:"30px", backgroundColor:"white", paddingBottom:"12px"}}>
 				<div className=" col-lg-1 col">
 				<button className={TopNavStyles.expandNavIcon}><i className="material-icons center" > dehaze</i></button>

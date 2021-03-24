@@ -19,8 +19,6 @@ export default function Layout({ children }) {
 				<TopNav></TopNav>
 			{children}
 			</div> 
-			
-			
 			</main>
 
 		{/* CDN JS */}

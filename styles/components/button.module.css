@@ -1,0 +1,29 @@
+.largeButtonBox{
+    text-align: center;
+	background:white;
+	border: 1px solid #E7E7E7;
+	box-sizing: border-box;
+	border-radius: 3px;
+	padding: 20px 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+.largeButtonBox>i{
+    font-size: 60px;
+    color: #09639B;
+}
+
+.largeButtonBox>p{
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #192A3E;
+}
+
+.largeButtonBox:hover{
+    color: white !important; 
+    background: #09639B;
+}
