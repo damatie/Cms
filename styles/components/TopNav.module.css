@@ -44,6 +44,22 @@
 	padding:14px 20px;
 }
 
+.topNavIcons {
+	border: solid 0px;
+	padding:0px !important;
+	background: white;
+}
+
+#active{
+	color:none;
+	cursor: pointer;
+}
+#active:hover:not(.active){
+	color: #1976D2 !important;
+	cursor: pointer;
+}
+/* Nav Links on mouse-over */
+
 .topNavIcons i{
 	padding-top: 20px !important;
 	font-size: 35px;
@@ -54,23 +70,21 @@
 	color: #1976D2;
 	cursor: pointer;
 }
-.active i{
-	color: #1976D2;
-	cursor: pointer;
-}
 
 .notificationBoxContainer{
-	width: 350px;
+	width: 300px;
 	height: auto;
-	opacity: 1;
 	position: absolute;
-	top: 75px;
-	right: 50px;
+	top: 80px;
+	right: 30px;
 	border: 1px solid #E7E7E7;
 	border-radius: 3px;
 	padding:0px;
 	background-color: white;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+#notificationBoxContainer{
+	display: none;
 }
 .notificationBoxHeader{
 	display: flex;
@@ -84,7 +98,7 @@
 	font-style: normal;
 	font-weight: 600;
 	color: #334D6E;
-	width: 30%;
+	width: 35%;
 	margin-left: 5px;
 	margin-top: 5px;
 	font-size: 16px;
@@ -123,7 +137,7 @@
 }
 
 .notificationItem .notificationText{
-	margin-top: 16px;
+	margin-top: 10px;
 	width:80%;
 }
 
@@ -145,7 +159,6 @@
 .notificationItem:nth-child(odd){
 	background: #334D6E;
 	color: white;
-	cursor: pointer;
 }
 
 .notificationItem:nth-child(odd) >.notificationText span{
@@ -160,7 +173,6 @@
 .notificationItem:nth-child(even){
 	background: white;
 	color: black;
-	cursor: pointer;
 }
 
 .notificationItem:nth-child(even) >.notificationText h5{

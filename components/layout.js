@@ -15,7 +15,8 @@ export default function Layout({ children }) {
 		
 		<main>
 			<SideNav></SideNav>
-			<div className="mainContentContainer"><TopNav></TopNav>
+			<div className="mainContentWrapper">
+				<TopNav></TopNav>
 			{children}
 			</div> 
 			

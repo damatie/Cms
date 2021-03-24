@@ -1,4 +1,4 @@
-import SideNavStyles from '../styles/SideNav.module.css'
+import SideNavStyles from '../styles/components/SideNav.module.css'
 import Link from 'next/link'
 import Images from 'next/image'
 

@@ -1,0 +1,71 @@
+.statSmallBox{
+	background:white;
+	height: 200px;
+	border: 1px solid #E7E7E7;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 30px 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.statSmallBox h5{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	color:  #192A3E;
+	margin-bottom: -3px;
+}
+
+.statSmallBox .statSubText{
+	 color:#828282;
+	 font-size: 12px ;
+ }
+
+ .statMediumBox{
+	background:white;
+	height:450px;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #E7E7E7;
+	box-sizing: border-box;
+	border-radius: 5px;
+ }
+
+ .statMediumBox h5{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	color:  #192A3E;
+	margin-bottom: -3px;
+}
+
+.statMediumBox .statMediumBoxHeader{
+	background: none;
+	padding: 30px 30px;
+	border-bottom: 1px solid #E7E7E7;
+	height: 130px;
+}
+.statMediumBox .statSubText{
+	color:#828282;
+	font-size: 12px ;
+}
+
+.statMediumBoxHeader div> span{
+	font-size:18px;
+	font-weight: 700;
+}
+
+.statMediumBox .statMediumBoxBody{
+	padding: 30px 30px;
+}
+
+.statMediumBox .statMediumBoxBodyChart{
+	padding: 10px 10px;
+	background: #FAFAFA;
+	height: 250px;
+}
+

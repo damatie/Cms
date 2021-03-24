@@ -8,9 +8,15 @@ body {
     background-color: #FAFAFA;
 }
 
-.mainContentContainer {
+.mainContentWrapper {
   width:auto;
   margin-left: 280px;
   padding: 5px 0px;
+  background:none;
+}
+
+.contentContainer{
+  max-width: 1200px;
+  margin: 1px auto;
   background:none;
 }
