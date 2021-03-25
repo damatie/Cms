@@ -11,7 +11,7 @@ export default function Dashboard(){
 				<TopDateFilter></TopDateFilter>
 				<div className="row mb-4 ">
 					<div className="col-lg-3">
-						<div className={StatBoxStyles.statSmallBox}>
+						<div className={[StatBoxStyles.statSmallBox, StatBoxStyles.statBoxBlue].join(" ")}>
 							<h5>Registered Users</h5>
 							<span className={StatBoxStyles.statSubText}>+5.27% Since Last Month</span>
 							<div></div>
@@ -19,7 +19,7 @@ export default function Dashboard(){
 						</div>
 					</div>
 					<div className="col-lg-3">
-						<div className={StatBoxStyles.statSmallBox}>
+						<div className={[StatBoxStyles.statSmallBox, StatBoxStyles.statBoxGreen].join(" ")}>
 							<h5>Total Products</h5>
 							<span className={StatBoxStyles.statSubText}>+5.27% Since Last Month</span>
 							<div></div>
@@ -27,7 +27,7 @@ export default function Dashboard(){
 						</div>
 					</div>
 					<div className="col-lg-3">
-						<div className={StatBoxStyles.statSmallBox}>
+						<div className={[StatBoxStyles.statSmallBox, StatBoxStyles.statBoxWhite].join(" ")}>
 							<h5>Total Groups</h5>
 							<span className={StatBoxStyles.statSubText}>+5.27% Since Last Month</span>
 							<div></div>
@@ -35,7 +35,7 @@ export default function Dashboard(){
 						</div>
 					</div>
 					<div className="col-lg-3">
-						<div className={StatBoxStyles.statSmallBox}>
+						<div className={[StatBoxStyles.statSmallBox, StatBoxStyles.statBoxRed].join(" ")}>
 							<h5>Revenue</h5>
 							<span className={StatBoxStyles.statSubText}>+5.27% Since Last Month</span>
 							<div></div>

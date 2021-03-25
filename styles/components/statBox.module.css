@@ -1,5 +1,4 @@
 .statSmallBox{
-	background:white;
 	height: 200px;
 	border: 1px solid #E7E7E7;
 	box-sizing: border-box;
@@ -14,14 +13,57 @@
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 21px;
-	color:  #192A3E;
 	margin-bottom: -3px;
 }
 
 .statSmallBox .statSubText{
-	 color:#828282;
-	 font-size: 12px ;
+	 font-size: 13px ;
  }
+
+.statBoxBlue{
+	background: #035CA7;
+}
+.statBoxBlue h5{
+	color: white;
+}
+
+.statBoxBlue .statSubText{
+	color: white;
+}
+
+.statBoxGreen{
+	background: #08B059;
+}
+.statBoxGreen h5{
+	color: white;
+}
+
+.statBoxGreen .statSubText{
+	color: white;
+}
+
+.statBoxWhite{
+	background:white;
+}
+.statBoxWhite h5{
+	color: #192A3E;
+}
+
+.statBoxWhite .statSubText{
+	color:#828282;
+}
+
+.statBoxRed{
+	background:#FF0000
+	;
+}
+.statBoxRed h5{
+	color: white;
+}
+
+.statBoxRed .statSubText{
+	color: white;
+}
 
  .statMediumBox{
 	background:white;
@@ -36,8 +78,8 @@
 
  .statMediumBox h5{
 	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
+	font-weight: 900;
+	font-size: 15px;
 	line-height: 21px;
 	color:  #192A3E;
 	margin-bottom: -3px;
@@ -83,6 +125,7 @@
 	background: none;
 	padding: 20px 30px;
 	font-size: 15px;
+	font-weight: 900;
 	margin-top: 0px;
 	
 }

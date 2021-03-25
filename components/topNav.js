@@ -21,7 +21,8 @@ export default function TopNav(){
 		<div className="container  ">
 			<div className="row" style={{background:"none", borderBottom:" 1px solid #E7E7E7", paddingLeft:"30px",paddingRight:"30px", backgroundColor:"white", paddingBottom:"12px"}}>
 				<div className=" col-lg-1 col">
-				<button className={TopNavStyles.expandNavIcon}><i className="material-icons center" > dehaze</i></button>
+				<button className={TopNavStyles.expandNavIcon}> <i class="las la-align-justify"></i> </button>
+			
 				</div>
 				{/* Ends Expand icon */}
 				<div className="col col-lg-2 ">
@@ -37,7 +38,7 @@ export default function TopNav(){
 				<div className="col-lg-7 col-7">
 					<form className={TopNavStyles.topNavSearchInput} >
 						<div className="row" id={TopNavStyles.topNavSearchDiv}> 
-						<div className="col-1"><i className="material-icons" style={{float:"left"}}> search</i> </div>
+						<div className="col-1"><i className="material-icons" style={{float:"left"}}> search</i>  </div>
 							<div className="col-11"><input type="text"  placeholder="Search"/></div>
 							</div>
 					</form>
@@ -45,10 +46,10 @@ export default function TopNav(){
 				{/* Ends Search container */}
 				<div className="col-lg-2">
 					<div className="row" style={{margin:"0px"}}>
-						<div className="col"><a onClick={handleNotification}  className={[TopNavStyles.topNavIcons,TopNavStyles.active ].join(" ")}> <i className="material-icons " id={TopNavStyles.active } >notifications</i></a ></div>
+						<div className="col"><a onClick={handleNotification}  className={[TopNavStyles.topNavIcons,TopNavStyles.active ].join(" ")}> <i className="lar la-bell" id={TopNavStyles.active } ></i></a ></div> 
 						
-						<div className="col"> <a  className={TopNavStyles.topNavIcons}> <i className="material-icons " >mail</i></a></div>
-						<div className="col"><a className={TopNavStyles.topNavIcons}> <i className="material-icons ">home</i> </a></div>
+						<div className="col"> <a  className={TopNavStyles.topNavIcons}> <i class="las la-envelope"></i></a></div>
+						<div className="col"><a className={TopNavStyles.topNavIcons}> <i class="las la-home"></i> </a></div>
 					</div>
 				</div>
 				{/* Notification box */}

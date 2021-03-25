@@ -39,7 +39,6 @@ export default function SideNav(){
 				</div>
 			</div>
 			{/* Drop down */}
-
 			
 			{/* <div className="collapse " id="profileDropdown">
 				<div className={SideNavStyles.cardBody}>
