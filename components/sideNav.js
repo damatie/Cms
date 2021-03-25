@@ -31,23 +31,23 @@ export default function SideNav(){
 					/>
 					</div>
 					<div className={SideNavStyles.pInfo}> 
-					<a data-bs-toggle="collapse" href="#profileDropdown" role="button" aria-expanded="false" aria-controls="profileDropdown">
-						<p className={SideNavStyles.mainText}>Suki</p>
-						<p className={SideNavStyles.subText} style={{color:"#C0C5CC !important"}}> suki@kusnap.com <i className="material-icons" style={{marginTop:"-10px", float:"right"}}>expand_more</i> </p> 
+						<a>
+							<p className={SideNavStyles.mainText}>Suki</p>
+							<p className={SideNavStyles.subText}> suki@kusnap.com  </p> 
 						</a> 
-						
 					</div>
 				</div>
-				
 			</div>
 			{/* Drop down */}
-			<div className="collapse " id="profileDropdown">
+
+			
+			{/* <div className="collapse " id="profileDropdown">
 				<div className={SideNavStyles.cardBody}>
 					
 						<div className={SideNavStyles.flexRow}>
 							<div className={SideNavStyles.dropDownIcon}>
 							<a href="#settings">
-								<i className="material-icons center" >account_circle</i>
+								<i class="las la-user-alt"></i>
 							</a>
 							</div>
 							<div className={SideNavStyles.dropDownText}> 
@@ -57,12 +57,10 @@ export default function SideNav(){
 							</a>
 						</div>
 						</div>
-					
-					
 					<div className={SideNavStyles.flexRow}>
 						<div className={SideNavStyles.dropDownIcon}>
 						<a href="#logout">
-							<i className="material-icons center" > settings_power</i>
+						<i class="las la-power-off"></i>
 						</a>
 						</div>
 						<div className={SideNavStyles.dropDownText}> 
@@ -74,8 +72,7 @@ export default function SideNav(){
 					</div>
 					
 				</div>
-				{/* Ends cards body */}
-			</div>
+			</div> */}
 			{/* Ends drop down  */}
 
 			{/* Nav links */}
@@ -83,18 +80,59 @@ export default function SideNav(){
 				<ul className={SideNavStyles.navLink}>
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a className={SideNavStyles.active}><i className="material-icons " style={{marginTop:"0px"}}> dashboard</i>  Dashboard</a>
+						<a className={SideNavStyles.active}><i class="las la-border-all"></i>  Dashboard</a>
+						
 					</Link>
-				</li>
+					</li>
 			
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/#">
-						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="material-icons " > view_agenda</i> Task
-						 <i className="material-icons" style={{marginTop:"-10px", float:"right"}}> keyboard_arrow_right</i> </a> 
+						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i class="las la-user-friends"></i>Users Management
+						<i class="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
 					</Link>
 					</li>
+
+					<li className={SideNavStyles.linkItem}>
+					<Link href="/#">
+						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i class="las la-users-cog"></i> Admin Management
+						 <i class="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
+					</Link> 
+					</li>
+
+					<li className={SideNavStyles.linkItem }>
+						<Link href="/">
+						<a><i class="las la-calendar-plus"></i> Post Management</a>
+						
+					</Link>
+					</li>
+					<li className={SideNavStyles.linkItem }>
+						<Link href="/">
+						<a><i class="las la-bell"></i> Notifications Management</a>
+						
+					</Link>
+					</li>
+					<li className={SideNavStyles.linkItem }>
+						<Link href="/">
+						<a><i class="las la-comments"></i>  Message Management</a>
+						
+					</Link>
+					</li>
+					<li className={SideNavStyles.linkItem }>
+						<Link href="/">
+						<a><i class="las la-users"></i> Group Management</a>
+						
+					</Link>
+					</li>
+					<li className={SideNavStyles.linkItem }>
+						<Link href="/">
+						<a><i class="las la-user-clock"></i> Admin Stats</a>
+						
+					</Link>
+					</li>
+
 					
-					<ul className={SideNavStyles.navChild}>
+					
+					{/* <ul className={SideNavStyles.navChild}>
 					<div className="collapse" id="task"  >
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/users-management">
@@ -126,18 +164,22 @@ export default function SideNav(){
 					</Link>
 					</li>
 					</div>
-					</ul>
+					</ul> */}
 					{/* Ends child nav */}
 
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/">
-						<a><i className="material-icons " > person</i>  Users Stats</a>
+						<a><i class="las la-trash-alt"></i>  Trash</a>
 					</Link>
 					</li>
-
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/">
-						<a> <i className="material-icons "> delete</i>  Trash</a>
+						<a> <i class="las la-tools"></i>  Settings</a>
+					</Link>
+					</li>
+					<li className={SideNavStyles.linkItem}>
+					<Link href="/">
+						<a><i class="las la-power-off"></i> Logout</a>
 					</Link>
 					</li>
 				</ul>

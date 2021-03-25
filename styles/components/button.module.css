@@ -8,22 +8,22 @@
 	margin-top: 5px;
 	margin-bottom: 5px;
     cursor: pointer;
+    color: red !important;
 }
 
-
-.largeButtonBox>i{
-    font-size: 60px;
-    color: #09639B;
+.largeButtonBox i{
+	font-size: 60px;
+	color: #09639B;
 }
 
-.largeButtonBox>p{
-    margin-top: -10px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #192A3E;
+.largeButtonBox p{
+	margin-top: -10px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #192A3E;
 }
 
 .largeButtonBox:hover{
-    color: white !important; 
-    background: #09639B;
+	color: white !important; 
+	background: #09639B;
 }
