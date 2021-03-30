@@ -1,6 +1,72 @@
+.statSmallerBox{
+	border: 1px solid #E7E7E7;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 20px 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.statSmallerBox h4{
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 21px;
+	margin-bottom: -1px;
+	font-family: 'Poppins', sans-serif;
+}
+.statSmallerBox .statSubText{
+	font-size: 14px;
+}
+.statSmallerBoxW{
+	background: white;
+}
+.statSmallerBoxW h4{
+	color: black;
+}
+
+.statSmallerBoxW .statSubText{
+	color: black;
+}
+
+.statSmallerBoxG{
+	background: #c6e7d6;
+}
+.statSmallerBoxG h4{
+	color: #08B059;
+}
+
+.statSmallerBoxG .statSubText{
+	color: #08B059;
+}
+
+.statSmallerBoxB{
+	background: #C9dcee;
+}
+.statSmallerBoxB h4{
+	color: #1976D2;
+} 
+.statSmallerBoxB .statSubText{
+	color: #1976D2;
+}
+
+.statSmallerBoxR{
+	background: #F7c4c4;
+}
+
+.statSmallerBoxR h4{
+	color: #FF0000;
+} 
+.statSmallerBoxR .statSubText{
+	color: #FF0000;
+}
+
+
 .statSmallBox{
 	height: 200px;
-	border: 1px solid #E7E7E7;
+	/* border: 1px solid #E7E7E7; */
 	box-sizing: border-box;
 	border-radius: 5px;
 	padding: 30px 30px;

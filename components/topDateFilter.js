@@ -3,7 +3,7 @@ export default function TopDateFilter(){
 	return(
 		<div className="row  mb-3 mt-4">
 			<div className="col-lg-10"></div>
-			<div className="col-lg-2 ">
+			<div className="col-lg-2">
 				<div className={InputStyles.filterDate }>
 					<div><i className="material-icons center" > event</i></div>
 					<div>

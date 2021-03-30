@@ -1,29 +1,47 @@
-.largeButtonBox{
-    text-align: center;
-	background:white;
-	border: 1px solid #E7E7E7;
-	box-sizing: border-box;
-	border-radius: 3px;
-	padding: 20px 30px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-    cursor: pointer;
-    color: red !important;
+.btn i{
+	margin-top: 0px;
+	margin-right: 4px;
+	font-size: 19px;
+	float: left;
+}
+.primary{
+	color: white !important;
+	background: #1976D2;
 }
 
-.largeButtonBox i{
-	font-size: 60px;
-	color: #09639B;
+.green{
+	color: #08B059!important;
+	background: #C6E7D6;
 }
 
-.largeButtonBox p{
-	margin-top: -10px;
-	font-size: 14px;
-	font-weight: 700;
-	color: #192A3E;
+.warning{
+	color: #FFA30D !important;
+	background: #FFF6E7;
+}
+.danger{
+	color: #FF0000 !important;
+	background: #F7C4C4;
+}
+/* .green{
+
+} */
+
+.TsmBtn{
+	padding: 5px 20px;
+	font-size: 12px;
+	font-weight: 500;
+	border-radius: 4px;
+	border:none !important;
+	margin: 4px 5px;
+	outline: none;
 }
 
-.largeButtonBox:hover{
-	color: white !important; 
-	background: #09639B;
+.mdBtn{
+	padding: 10px 15px;
+	font-size: 15px;
+	border-radius: 8px;
+	border:none !important;
+	outline: none;
 }
+
+

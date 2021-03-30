@@ -25,3 +25,78 @@
 	color: #1976D2;
  }
 
+ .selectCustom{
+	text-align: center;
+	font-size: 14px;
+	padding: 6px 1px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+ }
+
+ .Sblue{
+	background:#1976D2 ;
+	color: #FFFFFF;
+}
+
+.Swhite{
+	background: white;
+	color: #828282 !important;
+	border: 1px solid #E7E7E7;
+}
+
+ .selectCustom select{
+	min-width: 95%;
+	background:inherit;
+	color: inherit;
+	border: none;
+	outline: none;
+ }
+
+ .textField{
+	  width: 100%;
+		border: 1px solid #E7E7E7;
+		box-sizing: border-box;
+		border-radius: 5px;
+		color: #828282;
+		outline: none;
+ }
+
+ .textFieldSm{
+	padding: 6px 10px;
+	font-size: 14px;
+}
+
+.textFieldMd{
+	padding: 10px 10px;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.pwdFieldWrapper{
+	border: 1px solid #E7E7E7;
+	padding:3px 1px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.pwdFieldWrapper i{
+	float: right;
+	line-height: 1.7;
+	padding-right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	color: #828282;
+}
+
+.pwdField{
+	padding: 6.4px 8px;
+	border: 0px solid;
+	outline: none;
+	width: 85%;
+	color: #828282;
+	
+}
+
+
+
+

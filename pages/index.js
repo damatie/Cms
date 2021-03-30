@@ -1,6 +1,5 @@
-import Layout from '../components/layout'
-import TopDateFilter from '../components/topDateFilter'
-import StatBox from '../components/statBox'
+import Layout from '../components/Layout'
+import TopDateFilter from '../components/TopDateFilter'
 import StatBoxStyles from '../styles/components/statBox.module.css'
 import InputStyles from '../styles/components/input.module.css'
 

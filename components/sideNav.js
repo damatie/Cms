@@ -79,106 +79,93 @@ export default function SideNav(){
 				<ul className={SideNavStyles.navLink}>
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a className={SideNavStyles.active}><i class="las la-border-all"></i>  Dashboard</a>
+						<a className={SideNavStyles.active}><i className="las la-border-all"></i>  Dashboard</a>
 						
 					</Link>
 					</li>
 			
 					<li className={SideNavStyles.linkItem}>
-					<Link href="/#">
-						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i class="las la-user-friends"></i>Users Management
-						<i class="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
-					</Link>
+						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} data-bs-target="#users-management" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="las la-user-friends"></i>Users Management
+						<i className="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
 					</li>
+
+					{/* Starts sub nav */}
+					<ul className={SideNavStyles.navChild}>
+						<div className="collapse" id="users-management"  >
+
+						<li className={SideNavStyles.linkItem}>
+							<Link href="/all-users">
+								<a> All Users</a>
+							</Link>
+							</li>
+							
+							<li className={SideNavStyles.linkItem}>
+							<Link href="/users-management">
+								<a>Active Users</a>
+							</Link>
+							</li>
+
+							<li className={SideNavStyles.linkItem}>
+							<Link href="/">
+								<a> Blocked Users</a>
+							</Link>
+							</li>
+						</div>
+					</ul>
+					{/* Ends sub nav */}
 
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/#">
-						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i class="las la-users-cog"></i> Admin Management
-						 <i class="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
+						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="las la-users-cog"></i> Admin Management
+						 <i className="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
 					</Link> 
 					</li>
 
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a><i class="las la-calendar-plus"></i> Post Management</a>
+						<a><i className="las la-calendar-plus"></i> Post Management</a>
 						
 					</Link>
 					</li>
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a><i class="las la-bell"></i> Notifications Management</a>
+						<a><i className="las la-bell"></i> Notifications Management</a>
 						
 					</Link>
 					</li>
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a><i class="las la-comments"></i>  Message Management</a>
-						
+						<a><i className="las la-comments"></i>  Message Management</a>
 					</Link>
 					</li>
+
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a><i class="las la-users"></i> Group Management</a>
+						<a><i className="las la-users"></i> Group Management</a>
 						
 					</Link>
 					</li>
+
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a><i class="las la-user-clock"></i> Admin Stats</a>
+						<a><i className="las la-user-clock"></i> Admin Stats</a>
 						
 					</Link>
 					</li>
 
-					
-					
-					{/* <ul className={SideNavStyles.navChild}>
-					<div className="collapse" id="task"  >
-					<li className={SideNavStyles.linkItem}>
-					<Link href="/users-management">
-						<a>  <i className="material-icons"> group</i>Users Management  </a>
-					</Link>
-					</li>
-
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/">
-						<a>  <i className="material-icons " > library_add </i> Post Management </a>
-					</Link>
-					</li>
-
-					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
-						<a> <i className="material-icons " >notifications_active </i> Notifications Management </a>
-					</Link>
-					</li>
-
-					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
-						<a> <i className="material-icons">chat </i> Message Management  </a>
-					</Link>
-					</li>
-
-					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
-						<a>  <i className="material-icons " >call_merge </i>Group Management </a>
-					</Link>
-					</li>
-					</div>
-					</ul> */}
-					{/* Ends child nav */}
-
-					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
-						<a><i class="las la-trash-alt"></i>  Trash</a>
+						<a><i className="las la-trash-alt"></i>  Trash</a>
 					</Link>
 					</li>
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/">
-						<a> <i class="las la-tools"></i>  Settings</a>
+						<a> <i className="las la-tools"></i>  Settings</a>
 					</Link>
 					</li>
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/">
-						<a><i class="las la-power-off"></i> Logout</a>
+						<a><i className="las la-power-off"></i> Logout</a>
 					</Link>
 					</li>
 				</ul>

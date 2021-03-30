@@ -1,7 +1,7 @@
 import TopNavStyles from '../styles/components/TopNav.module.css'
 import Link from 'next/link'
 import Images from 'next/image'
-import NotificationBox from '../components/notificationBox'
+import NotificationBox from './NotificationBox'
 
 export default function TopNav(){
 	function handleNotification(e) {
@@ -21,7 +21,7 @@ export default function TopNav(){
 		<div className="container  ">
 			<div className="row" style={{background:"none", borderBottom:" 1px solid #E7E7E7", paddingLeft:"30px",paddingRight:"30px", backgroundColor:"white", paddingBottom:"12px"}}>
 				<div className=" col-lg-1 col">
-				<button className={TopNavStyles.expandNavIcon}> <i class="las la-align-justify"></i> </button>
+				<button className={TopNavStyles.expandNavIcon}> <i className="las la-align-justify"></i> </button>
 			
 				</div>
 				{/* Ends Expand icon */}
@@ -48,8 +48,8 @@ export default function TopNav(){
 					<div className="row" style={{margin:"0px"}}>
 						<div className="col"><a onClick={handleNotification}  className={[TopNavStyles.topNavIcons,TopNavStyles.active ].join(" ")}> <i className="lar la-bell" id={TopNavStyles.active } ></i></a ></div> 
 						
-						<div className="col"> <a  className={TopNavStyles.topNavIcons}> <i class="las la-envelope"></i></a></div>
-						<div className="col"><a className={TopNavStyles.topNavIcons}> <i class="las la-home"></i> </a></div>
+						<div className="col"> <a  className={TopNavStyles.topNavIcons}> <i className="las la-envelope"></i></a></div>
+						<div className="col"><a className={TopNavStyles.topNavIcons}> <i className="las la-home"></i> </a></div>
 					</div>
 				</div>
 				{/* Notification box */}

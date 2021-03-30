@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 html,
 body {
@@ -7,7 +11,18 @@ body {
   font-family:'Poppins', sans-serif ;
     background-color: #FAFAFA;
 }
-
+body::-webkit-scrollbar{
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color:#08B059;
+  outline: 0px solid slategrey;
+}
 .mainContentWrapper {
   width:auto;
   margin-left: 280px;
@@ -20,3 +35,109 @@ body {
   margin: 1px auto;
   background:none;
 }
+.breadcrumbs{
+  padding: 30px 0px;
+}
+
+.breadcrumbs .parent{
+ font-size: 20px;
+ font-weight: 700;
+ color: gray;
+}
+
+.breadcrumbs .child{
+  font-size: 16px;
+  font-weight:bold ;
+  color: #035CA7;
+ }
+ .sortSection .text{
+    font-size: 14px;
+    color: #112D57;
+    font-weight: bold;
+    line-height: 2.7;
+ }
+/* Pagination */
+ .pagination{
+   font-size: 14px;
+   float: right !important;
+ }
+
+ .pagination span{
+  margin: 1px 5px;
+}
+.pagination span a{
+ text-decoration: none;
+ color: #828282;
+}
+ .pagination .pNav{
+  cursor: pointer;
+  background: white;
+  padding: 4px 15px;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #828282;
+ }
+ .pagination .page{
+  line-height: 2.2 ;
+ }
+
+ .pagination .pActive{
+  line-height: 2 !important;
+  text-align: center;
+  width: 30px;
+  color: black;
+  height: 30px;
+  background: white;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+/* Table */
+.user_Table{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+	border-radius: 8px !important;
+  background: white;
+}
+
+.status_active{
+  color:#08B059 ;
+}
+.status_inActive{
+  color:#FF0000;
+}
+
+/* Modal */
+
+.modal-dialog{
+  background:none !important;
+  max-width: 600px !important;
+}
+
+.Mheader{							
+  margin-top:40px !important;
+  text-align: center !important;
+}
+
+.Mheader h5{
+  font-size: 24px !important;
+  color: #1976D2;
+}	
+
+.modal-body{
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #404040;
+  border: 0px !important;
+  padding-bottom: 50px;
+}
+
+
+.modal-body button{
+  width: 100%;
+}
+
+
