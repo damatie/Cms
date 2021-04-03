@@ -100,13 +100,13 @@ export default function SideNav(){
 							</li>
 							
 							<li className={SideNavStyles.linkItem}>
-							<Link href="/users-management">
+							<Link href="/active-users">
 								<a>Active Users</a>
 							</Link>
 							</li>
 
 							<li className={SideNavStyles.linkItem}>
-							<Link href="/">
+							<Link href="/blocked-users">
 								<a> Blocked Users</a>
 							</Link>
 							</li>
@@ -116,10 +116,35 @@ export default function SideNav(){
 
 					<li className={SideNavStyles.linkItem}>
 					<Link href="/#">
-						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} href="#task" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="las la-users-cog"></i> Admin Management
+						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} data-bs-target="#admin-management" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="las la-users-cog"></i> Admin Management
 						 <i className="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
 					</Link> 
 					</li>
+
+					{/* Starts sub nav */}
+					<ul className={SideNavStyles.navChild}>
+						<div className="collapse" id="admin-management"  >
+
+						<li className={SideNavStyles.linkItem}>
+							<Link href="/all-admin">
+								<a> All Admin</a>
+							</Link>
+							</li>
+							
+							<li className={SideNavStyles.linkItem}>
+							<Link href="/active-admin">
+								<a>Active Admin</a>
+							</Link>
+							</li>
+
+							<li className={SideNavStyles.linkItem}>
+							<Link href="/blocked-admin">
+								<a> Blocked Admin</a>
+							</Link>
+							</li>
+						</div>
+					</ul>
+					{/* Ends sub nav */}
 
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">

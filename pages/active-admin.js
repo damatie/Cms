@@ -4,22 +4,22 @@ import Images from 'next/image'
 import InputStyles from '../styles/components/input.module.css'
 import Button from '../components/Button'
 import StatBox from '../components/StatBox'
-import SortUsers from '../components/SortUsers'
-import AddUser from '../components/UserModal'
-import EditUser from '../components/UserModal'
+import SortAdmin from '../components/SortAdmin'
+import AddAdmin from '../components/AdminModal'
+import EditAdmin from '../components/AdminModal'
 import ButtonStyles from '../styles/components/button.module.css'
 import UserTableStyles from '../styles/components/usersTable.module.css'
 
-export default function AllUsers(){
+export default function ActiveAdmin(){
 	return(
 		<Layout>
 			<div className="container contentContainer" >
-				<div className="breadcrumbs"><span className="parent">Users Management </span> <i className="las la-angle-right"></i> <span className="child"> All Users</span></div>
+				<div className="breadcrumbs"><span className="parent">Users Management </span> <i className="las la-angle-right"></i> <span className="child"> Active Admin</span></div>
 					<StatBox></StatBox>
 				{/* End smaller box */}
-				<SortUsers></SortUsers>
-				<AddUser title="Create New User" target="addUser" label="REGISTER"/>
-				<EditUser  title="Edit User"  target="editUser" label="SAVE CHANGES"/>
+				<SortAdmin></SortAdmin>
+				<AddAdmin title="Create New Admin" target="addAdmin" label="REGISTER"/>
+				<EditAdmin  title="Edit Admin"  target="editAdmin" label="SAVE CHANGES"/>
 				{/* Ends sort section */}
 
 				<div className="row mt-2">
@@ -34,7 +34,7 @@ export default function AllUsers(){
 									<th scope="col">Group</th>
 									<th scope="col">Likes</th>
 									<th scope="col">Status</th>
-									<th scope="col">Created </th>
+                  <th scope="col">Created</th>
 									<th scope="col">Actions</th>
 									
 								</tr>
@@ -45,7 +45,6 @@ export default function AllUsers(){
 									<input className="form-check-input" type="checkbox" value="" id=""/>
 										<label className="form-check-label" htmlFor="check">
 										</label>
-										
 									</th>
 									<td>
 										<span className={UserTableStyles.tableAvatar}>
@@ -64,7 +63,7 @@ export default function AllUsers(){
 									<td>5</td>
 									<td>20</td>
 									<td><span className="status_active">Active</span></td>
-									<td>26-03-2021</td>
+                  <td>26-02-2021</td>
 									<td>
 									<Button 
 										label="View User"
@@ -74,7 +73,7 @@ export default function AllUsers(){
 										label="Edit"
 										type={[ButtonStyles.btn,ButtonStyles.TsmBtn,ButtonStyles.warning].join(" ")}
 										data="modal"
-										target="#editUser"
+										target="#editAdmin"
 										/>
 										<Button 
 										label="Block User"
@@ -106,7 +105,7 @@ export default function AllUsers(){
 									<td>5</td>
 									<td>20</td>
 									<td><span className="status_active">Active</span></td>
-									<td>29-03-2021</td>
+                  <td>31-03-2021</td>
 									<td>
 									<Button 
 										label="View User"

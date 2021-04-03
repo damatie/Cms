@@ -1,7 +1,7 @@
 import Button from '../components/Button'
 import ButtonStyles from '../styles/components/button.module.css'
 import InputStyles from '../styles/components/input.module.css'
-export default function UserModal(props){
+export default function AdminModal(props){
 	function showPwd(e) {
     console.log('Show PWD.');
 	 	let maskPwd = document.getElementById('password');
@@ -53,11 +53,66 @@ export default function UserModal(props){
 										</div> 
 									</div>
 
-									<div className="col-12">
+									<div className="col-lg-6">
 										<label htmlFor="phone" className="form-label">Phone Number</label>
 										<input type="tel" className={[InputStyles.textField,InputStyles.textFieldMd].join(" ")} id="phone" placeholder="+23412345678"/>
 									</div> 
 
+                  <div className="col-lg-6">
+										<label htmlFor="" className="form-label">Assign Role</label>
+										<div className={[InputStyles.selectCustom, InputStyles.selectCustomMd, InputStyles.Swhite].join(" ")}>  
+											<select >
+												<option>Editor</option>
+                        <option>Admin</option>
+											</select> 
+										</div>
+									</div> 
+
+                  <div className="col-lg-12 " id={InputStyles.AdminModalcheckBox}>
+                  
+                    <span >
+                      <label className="form-check-label" htmlFor="check"> Editor</label> 
+                      <input  type="checkbox" value="" id=""/>
+                    </span> 
+                  
+
+                  
+                    <span >
+                      <label className="form-check-label" htmlFor="check"> Delete</label> 
+                      <input  type="checkbox" value="" id=""/>
+                    </span>
+                  
+
+                  
+                    <span >
+                      <label className="form-check-label" htmlFor="check"> Add user</label> 
+                      <input  type="checkbox" value="" id=""/>
+                    
+                    </span>
+                  
+                  
+                    <span >
+                      <label className="form-check-label" htmlFor="check"> Send Message</label> 
+                      <input  type="checkbox" value="" id=""/>
+                    
+                    </span>
+                  
+                  
+                    <span >
+                      <label className="form-check-label" htmlFor="check"> Create Ads</label> 
+                      <input  type="checkbox" value="" id=""/>
+                    
+                    </span>
+                  
+
+                  
+                    <span >
+                      <label className="form-check-label" htmlFor="check"> All</label> 
+                      <input  type="checkbox" value="" id=""/>
+                    
+                    </span>
+                      
+                   </div> 
 									<div className="col-12">
 										<Button 
 										label={props.label}

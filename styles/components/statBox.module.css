@@ -144,7 +144,7 @@
 
  .statMediumBox h5{
 	font-style: normal;
-	font-weight: 900;
+	font-weight: 600;
 	font-size: 15px;
 	line-height: 21px;
 	color:  #192A3E;
@@ -164,7 +164,7 @@
 
 .statMediumBoxHeader div> span{
 	font-size:18px;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .statMediumBox .statMediumBoxBody{
@@ -191,7 +191,7 @@
 	background: none;
 	padding: 20px 30px;
 	font-size: 15px;
-	font-weight: 900;
+	font-weight: 600;
 	margin-top: 0px;
 	
 }

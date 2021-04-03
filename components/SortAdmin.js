@@ -9,11 +9,11 @@ export default function SortUsers(){
 					<div className="col-lg-10"> </div>
 					<div className="col-lg-2">
 						<Button 
-						label="Create New User"
+						label="Create New Admin"
 						type={[ButtonStyles.btn,ButtonStyles.mdBtn,ButtonStyles.primary].join(" ")}
 						icon={<i className="las la-plus-circle"></i>}
 						data="modal"
-						target="#addUser"
+						target="#addAdmin"
 						 />
 					</div>
 				</div>

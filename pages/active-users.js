@@ -10,11 +10,11 @@ import EditUser from '../components/UserModal'
 import ButtonStyles from '../styles/components/button.module.css'
 import UserTableStyles from '../styles/components/usersTable.module.css'
 
-export default function AllUsers(){
+export default function ActiveUsers(){
 	return(
 		<Layout>
 			<div className="container contentContainer" >
-				<div className="breadcrumbs"><span className="parent">Users Management </span> <i className="las la-angle-right"></i> <span className="child"> All Users</span></div>
+				<div className="breadcrumbs"><span className="parent">Users Management </span> <i className="las la-angle-right"></i> <span className="child"> Active  Users</span></div>
 					<StatBox></StatBox>
 				{/* End smaller box */}
 				<SortUsers></SortUsers>
@@ -57,14 +57,14 @@ export default function AllUsers(){
 											alt="avatar"
 										/>
 										</span> 
-									<span className={UserTableStyles.tableName}> Anthony</span>
+									<span className={UserTableStyles.tableName}> David</span>
 									</td>
-									<td>anthony@kusnap.ng</td>
+									<td>David@kusnap.ng</td>
 									<td>10</td>
 									<td>5</td>
 									<td>20</td>
 									<td><span className="status_active">Active</span></td>
-									<td>26-03-2021</td>
+									<td>21-03-2021</td>
 									<td>
 									<Button 
 										label="View User"
@@ -92,21 +92,20 @@ export default function AllUsers(){
 									<td>
 										<span className={UserTableStyles.tableAvatar}>
 										<Images
-											
 											src="/../public/assets/avatar/avatar3.svg" 
 											height={25} 
 											width={25} 
 											alt="avatar"
 										/>
 										</span> 
-									<span className={UserTableStyles.tableName}>James Kent</span>
+									<span className={UserTableStyles.tableName}> Mercy Daniels</span>
 									</td>
-									<td>james@kusnap.ng</td>
+									<td>daniel@kusnap.ng</td>
 									<td>10</td>
 									<td>5</td>
 									<td>20</td>
 									<td><span className="status_active">Active</span></td>
-									<td>29-03-2021</td>
+									<td>14-03-2021</td>
 									<td>
 									<Button 
 										label="View User"

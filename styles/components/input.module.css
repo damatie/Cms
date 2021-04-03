@@ -33,6 +33,10 @@
 	margin-bottom: 5px;
  }
 
+ .selectCustomMd{
+	padding: 9px 1px !important;
+ }
+
  .Sblue{
 	background:#1976D2 ;
 	color: #FFFFFF;
@@ -95,6 +99,18 @@
 	width: 85%;
 	color: #828282;
 	
+}
+
+#AdminModalcheckBox{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+#AdminModalcheckBox span{
+	margin-right:18px;
+	
+}
+#AdminModalcheckBox label{
+	padding-right: 5px;
 }
 
 
