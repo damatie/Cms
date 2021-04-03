@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout.js'
 import Link from 'next/link'
 import Images from 'next/image'
 import InputStyles from '../styles/components/input.module.css'
