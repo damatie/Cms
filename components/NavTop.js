@@ -28,7 +28,7 @@ export default function TopNav(){
 				<div className="col col-lg-2 ">
 				<Images
 						className={TopNavStyles.logo}
-						src="/../public/assets/logo/kusnap-logo.svg" 
+						src="/assets/logo/kusnap-logo.svg" 
 						height={75} 
 						width={220} 
 						alt="avatar"

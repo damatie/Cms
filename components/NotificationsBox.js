@@ -13,7 +13,7 @@ export default function NotificationBox(){
 					<div className={TopNavStyles.notificationItem}>
 						<div className={TopNavStyles.notificationImg}>
 							<Images
-							src="/../public/assets/avatar/avatar2.svg" 
+							src="/assets/avatar/avatar2.svg" 
 							height={50} 
 							width={40} 
 							alt="avatar"
@@ -29,7 +29,7 @@ export default function NotificationBox(){
 					<div className={TopNavStyles.notificationItem}>
 						<div className={TopNavStyles.notificationImg}>
 							<Images
-							src="/../public/assets/avatar/avatar3.svg" 
+							src="/assets/avatar/avatar3.svg" 
 							height={50} 
 							width={40} 
 							alt="avatar"
@@ -45,7 +45,7 @@ export default function NotificationBox(){
 					<div className={TopNavStyles.notificationItem}>
 						<div className={TopNavStyles.notificationImg}>
 							<Images
-							src="/../public/assets/avatar/avatar3.svg" 
+							src="/assets/avatar/avatar3.svg" 
 							height={50} 
 							width={40} 
 							alt="avatar"

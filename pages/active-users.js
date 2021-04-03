@@ -51,7 +51,7 @@ export default function ActiveUsers(){
 										<span className={UserTableStyles.tableAvatar}>
 										<Images
 											
-											src="/../public/assets/avatar/avatar2.svg" 
+											src="/assets/avatar/avatar2.svg" 
 											height={25} 
 											width={25} 
 											alt="avatar"
@@ -92,7 +92,7 @@ export default function ActiveUsers(){
 									<td>
 										<span className={UserTableStyles.tableAvatar}>
 										<Images
-											src="/../public/assets/avatar/avatar3.svg" 
+											src="/assets/avatar/avatar3.svg" 
 											height={25} 
 											width={25} 
 											alt="avatar"
