@@ -2,11 +2,11 @@ import Layout from '../components/CmsLayout.js'
 import Link from 'next/link'
 import Images from 'next/image'
 import InputStyles from '../styles/components/input.module.css'
-import Button from '../components/Button.js'
-import StatBox from '../components/StatBox.js'
-import SortAdmin from '../components/SortAdmin.js'
-import AddAdmin from '../components/AdminModal.js'
-import EditAdmin from '../components/AdminModal.js'
+import Button from '../components/button.js'
+import StatBox from '../components/statBox.js'
+import SortAdmin from '../components/sortAdmin.js'
+import AddAdmin from '../components/adminModal.js'
+import EditAdmin from '../components/adminModal.js'
 import ButtonStyles from '../styles/components/button.module.css'
 import UserTableStyles from '../styles/components/usersTable.module.css'
 
@@ -36,7 +36,6 @@ export default function ActiveAdmin(){
 									<th scope="col">Status</th>
                   <th scope="col">Created</th>
 									<th scope="col">Actions</th>
-									
 								</tr>
 							</thead>
 							<tbody>

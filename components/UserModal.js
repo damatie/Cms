@@ -1,4 +1,4 @@
-import Button from '../components/Button.js'
+import Button from './button.js'
 import ButtonStyles from '../styles/components/button.module.css'
 import InputStyles from '../styles/components/input.module.css'
 export default function UserModal(props){

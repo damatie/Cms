@@ -1,5 +1,5 @@
 import Layout from '../components/CmsLayout.js'
-import TopDateFilter from '../components/TopDateFilter.js'
+import TopDateFilter from '../components/topDateFilter.js'
 import StatBoxStyles from '../styles/components/statBox.module.css'
 import InputStyles from '../styles/components/input.module.css'
 
