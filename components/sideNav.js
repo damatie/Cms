@@ -22,9 +22,11 @@ export default function SideNav(){
 			<div className={SideNavStyles.navProfilecontainer}>
 				<div className={SideNavStyles.flexRow}>
 					<div className={SideNavStyles.pImg}>
-					<img
+					<Images
 						className={SideNavStyles.navAvatar}
-						src="/assets/avatar/avatar.png" 
+						src={`/vercel.svg`}
+						height={144} 
+						width={144} 
 						alt="avatar"
 					/>
 					</div>
