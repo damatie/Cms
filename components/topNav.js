@@ -1,7 +1,7 @@
 import TopNavStyles from '../styles/components/TopNav.module.css'
 import Link from 'next/link'
 import Images from 'next/image'
-import NotificationBox from './notificationBox.js'
+import NotificationBox from './NotificationBox.js'
 
 export default function TopNav(){
 	function handleNotification(e) {
