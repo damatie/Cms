@@ -22,11 +22,9 @@ export default function SideNav(){
 			<div className={SideNavStyles.navProfilecontainer}>
 				<div className={SideNavStyles.flexRow}>
 					<div className={SideNavStyles.pImg}>
-					<Images
+					<img
 						className={SideNavStyles.navAvatar}
-						src="/../public/assets/avatar/avatar.png" 
-						height={144} 
-						width={144} 
+						src="/assets/avatar/avatar.png" 
 						alt="avatar"
 					/>
 					</div>

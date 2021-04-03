@@ -134,6 +134,7 @@
 	text-align: left !important;
 }
 .navAvatar{
+	width: auto;
 border-radius: 100px !important;
 }
 
