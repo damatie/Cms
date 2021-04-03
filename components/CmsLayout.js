@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import SideNav from './NavSide.js'
-import TopNav from './TopNav.js'
+import TopNav from './NavTop.js'
 export default function Layout({ children }) {
 	return (
 		<div>
