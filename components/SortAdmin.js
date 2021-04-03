@@ -1,4 +1,4 @@
-import Button from '../components/Button'
+import Button from '../components/Button.js'
 import InputStyles from '../styles/components/input.module.css'
 import ButtonStyles from '../styles/components/button.module.css'
 

@@ -1,4 +1,4 @@
-import Button from '../components/Button'
+import Button from '../components/Button.js'
 import ButtonStyles from '../styles/components/button.module.css'
 import InputStyles from '../styles/components/input.module.css'
 export default function AdminModal(props){
