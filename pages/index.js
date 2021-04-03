@@ -1,4 +1,4 @@
-import Layout from '../components/Layout.js'
+import Layout from '../components/CmsLayout.js'
 import TopDateFilter from '../components/TopDateFilter.js'
 import StatBoxStyles from '../styles/components/statBox.module.css'
 import InputStyles from '../styles/components/input.module.css'
