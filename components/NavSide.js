@@ -24,7 +24,7 @@ export default function SideNav(){
 					<div className={SideNavStyles.pImg}>
 					<Images
 						className={SideNavStyles.navAvatar}
-						src={`/vercel.svg`}
+						src={`/assets/avatar/avatar.png`}
 						height={144} 
 						width={144} 
 						alt="avatar"
