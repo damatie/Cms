@@ -1,4 +1,4 @@
-import Head from 'next/head.js'
+import Head from 'next/head'
 import SideNav from './SideNav.js'
 import TopNav from './TopNav.js'
 export default function Layout({ children }) {
