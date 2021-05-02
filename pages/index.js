@@ -2,13 +2,28 @@ import Layout from '../components/CmsLayout.js'
 import TopDateFilter from '../components/DateFilterTop.js'
 import StatBoxStyles from '../styles/components/statBox.module.css'
 import InputStyles from '../styles/components/input.module.css'
+import {useState,useEffect} from 'react'
+import {myCookie,deleteCookie,getCookie, Host,AuthToken,checkIfLoggedIn} from './utils/Auth'
+import  Router  from 'next/router'
+
 
 export default function Dashboard(){
+
+	useEffect( () => {
+		if(!checkIfLoggedIn()){
+			Router.push("/login")
+		}else{
+			Router.push("/")
+		}		
+	},[])
 	return(
+		
 		<Layout>
 			<div className="container contentContainer" >
+		
 				<TopDateFilter></TopDateFilter>
 				<div className="row mb-4 ">
+					
 					<div className="col-lg-3">
 						<div className={[StatBoxStyles.statSmallBox, StatBoxStyles.statBoxBlue].join(" ")}>
 							<h5>Registered Users</h5>
@@ -61,7 +76,6 @@ export default function Dashboard(){
 									</div>
 								</div>
 								{/* End Header */}
-
 								<div className={StatBoxStyles.statMediumBoxBody}>
 									<div className={StatBoxStyles.statMediumBoxBodyChart}></div>
 								</div>
@@ -97,7 +111,6 @@ export default function Dashboard(){
 											<div className="row">
 												<div className="col-lg-12" >
 													<div className={StatBoxStyles.statLargeChart}>
-														
 													</div>
 												</div>
 											</div>
@@ -130,3 +143,4 @@ export default function Dashboard(){
 		</Layout>
 	)
 }
+

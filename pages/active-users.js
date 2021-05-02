@@ -11,6 +11,7 @@ import ButtonStyles from '../styles/components/button.module.css'
 import UserTableStyles from '../styles/components/usersTable.module.css'
 
 export default function ActiveUsers(){
+ 
 	return(
 		<Layout>
 			<div className="container contentContainer" >

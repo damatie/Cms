@@ -1,21 +1,49 @@
+import React, {useEffect } from 'react';
 import SideNavStyles from '../styles/components/SideNav.module.css'
 import Link from 'next/link'
+// import Link from './utils/ActiveLink.js'
 import Images from 'next/image'
+import {useRouter } from "next/router";
+import Router from "next/router";
+import {myCookie,deleteCookie,getCookie, Host,AuthToken,checkIfLoggedIn,sendToken} from '../pages/utils/Auth'
+
 
 
 export default function SideNav(){
-	// function handleNavChild(e) {
-  //   e.preventDefault();
-  //   console.log('The link was clicked.');
-	//  let childNav= document.getElementById(SideNavStyles.navChild);
-	// 	if (childNav.style.display === "block") {
-	// 		childNav.style.display = "none";
-	// 	} else {
-	// 		childNav.style.display = "block";
-	// 	}
-
-	// }
+	async function LoginOut(){
+		if(!deleteCookie("Bearer")){
+			Router.push("/login")
+		}
+		
+		
+	}
 	
+	const router = useRouter();
+	
+	useEffect(() => {
+		let toggleChild= document.getElementById("navChild");
+		if (router.pathname !== "/all-users" && router.pathname !== "/active-users" &&  router.pathname !== "/blocked-users") {
+			toggleChild.style.display ="none"
+		}else{
+			toggleChild.style.display ="block"
+		} 
+		
+  });
+
+	
+	function handleNavChild(e) {
+    e.preventDefault();
+    // console.log('The link was clicked.');
+	 let toggleChild= document.getElementById("navChild");
+		if (toggleChild.style.display ==="block") {
+			toggleChild.style.display = "none";
+			
+		} else {
+			toggleChild.style.display = "block";
+			}
+		}
+		
+
 	return(
 			
 		<div className={SideNavStyles.sidebar}>
@@ -32,8 +60,8 @@ export default function SideNav(){
 					</div>
 					<div className={SideNavStyles.pInfo}> 
 						<a>
-							<p className={SideNavStyles.mainText}>Suki</p>
-							<p className={SideNavStyles.subText}> suki@kusnap.com  </p> 
+							<p className={SideNavStyles.mainText}>Kusnap Admin</p>
+							<p className={SideNavStyles.subText}> admin@kusnap.com  </p> 
 						</a> 
 					</div>
 				</div>
@@ -79,35 +107,35 @@ export default function SideNav(){
 				<ul className={SideNavStyles.navLink}>
 					<li className={SideNavStyles.linkItem }>
 						<Link href="/">
-						<a className={SideNavStyles.active}><i className="las la-border-all"></i>  Dashboard</a>
+						<a className={router.pathname == "/" ? SideNavStyles.active : ""}><i className="las la-border-all"></i>  Dashboard</a>
 						
 					</Link>
 					</li>
 			
 					<li className={SideNavStyles.linkItem}>
-						<a data-bs-toggle="collapse" id={SideNavStyles.collapseChildNav} data-bs-target="#users-management" role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="las la-user-friends"></i>Users Management
+						<a onClick={handleNavChild} className={router.pathname !== "/all-users" ? router.pathname !=="/active-users" ? router.pathname !=="/blocked-users" ? " ":SideNavStyles.active : SideNavStyles.active : SideNavStyles.active }  role="button" aria-expanded="false" aria-controls="collapseChildNav">  <i className="las la-user-friends"></i>Users Management
 						<i className="las la-angle-right" style={{marginTop:"-10px", float:"right"}}></i> </a> 
 					</li>
 
 					{/* Starts sub nav */}
-					<ul className={SideNavStyles.navChild}>
-						<div className="collapse" id="users-management"  >
+					<ul className={[SideNavStyles.navChild].join(" ")}  id= "navChild">
+						<div className="navToggle" >
 
 						<li className={SideNavStyles.linkItem}>
 							<Link href="/all-users">
-								<a> All Users</a>
+								<a className={router.pathname == "/all-users" ? SideNavStyles.navChildActive  : ""}> All Users</a>
 							</Link>
 							</li>
 							
 							<li className={SideNavStyles.linkItem}>
 							<Link href="/active-users">
-								<a>Active Users</a>
+								<a className={router.pathname == "/active-users" ? SideNavStyles.navChildActive  : ""}>Active Users</a>
 							</Link>
 							</li>
 
 							<li className={SideNavStyles.linkItem}>
 							<Link href="/blocked-users">
-								<a> Blocked Users</a>
+								<a className={router.pathname == "/blocked-users" ? SideNavStyles.navChildActive  : ""}> Blocked Users</a>
 							</Link>
 							</li>
 						</div>
@@ -187,11 +215,9 @@ export default function SideNav(){
 					<Link href="/">
 						<a> <i className="las la-tools"></i>  Settings</a>
 					</Link>
-					</li>
-					<li className={SideNavStyles.linkItem}>
-					<Link href="/">
-						<a><i className="las la-power-off"></i> Logout</a>
-					</Link>
+		
+						<button type="button" className="navLogout" onClick={()=>LoginOut()}><i className="las la-power-off"></i> Logout</button>
+					
 					</li>
 				</ul>
 			</div>

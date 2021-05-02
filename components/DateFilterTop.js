@@ -9,7 +9,7 @@ export default function TopDateFilter(){
 					<div>
 						<form>
 							<select className={InputStyles.selectIcon} aria-label=".form-select-lg example">
-								<option selected>Today</option>
+								<option >Today</option>
 								<option value="1">Monday</option>
 								<option value="1">Tusday</option>
 							</select>

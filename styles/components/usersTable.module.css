@@ -28,11 +28,19 @@
 	width: 25px;
 	background:none;
 	border-radius: 50px;
+	background: rgb(221, 221, 221);
 }
 
 .tableName{
 	font-weight: 500;
 	line-height: 2;
+}
+
+.img{
+	position: relative;
+	left:10px;
+  line-height: 2px !important;
+  border-radius: 50% !important;
 }
 
 .usersTable input{

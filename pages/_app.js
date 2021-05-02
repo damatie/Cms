@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../styles/auth.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

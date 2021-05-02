@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import SideNav from './NavSide.js'
-import TopNav from './NavTop.js'
 export default function Layout({ children }) {
 	
 	return (
@@ -16,9 +14,8 @@ export default function Layout({ children }) {
 		</Head>
 		
 		<main>
-			<SideNav></SideNav>
-			<div className="mainContentWrapper">
-				<TopNav></TopNav>
+			
+			<div className="">
 			{children}
 			</div> 
 			</main>

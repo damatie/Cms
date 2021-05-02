@@ -1,0 +1,46 @@
+
+/* Login */
+
+.authContainer{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  max-width: 500px;
+  background: whitesmoke;
+  margin: auto;
+  position: relative;
+  top: 200px;
+}
+
+
+.authContainer h3{
+  text-align: center;
+  line-height: 4.1;
+  color: #035CA7;
+  font-size: 16px;
+}
+
+#LoginBtn{
+  padding-left: 5px !important;
+}
+
+.navLogout{
+  padding-left: 15px !important;
+  background: none;
+  border: solid 0px;
+  color: #334D6E;
+  font-size: 14px;
+}
+
+.loginLogoDiv{
+  text-align: center;
+}
+
+/* Allerts */
+.alert{
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 13px;
+  font-weight: 300;
+}

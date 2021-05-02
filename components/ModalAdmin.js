@@ -1,7 +1,9 @@
 import Button from './Btn.js'
 import ButtonStyles from '../styles/components/button.module.css'
 import InputStyles from '../styles/components/input.module.css'
+import {useState,useEffect} from 'react'
 export default function AdminModal(props){
+	const [name, setName] = useState('Maxwell')
 	function showPwd(e) {
     console.log('Show PWD.');
 	 	let maskPwd = document.getElementById('password');
@@ -20,7 +22,16 @@ export default function AdminModal(props){
 			I2.className="las la-eye-slash"
 		}
 	}
-	// let Blabel ={props.btnLabel};
+	console.log(name)
+
+	async function handleUserUpdate(){
+
+			setName('james')
+				console.log(name)
+		 
+		
+}
+
 	return(
 			
 		<div className="modal fade" id={props.target} tabIndex="-1"  aria-hidden="true">
@@ -34,7 +45,7 @@ export default function AdminModal(props){
 								<div className="row">
 									<div className="col-12">
 										<label htmlFor="userName" className="form-label">Username</label>
-										<input type="text" className={[InputStyles.textField,InputStyles.textFieldMd].join(" ")} id="userName" placeholder="James"/>
+										<input type="text" className={[InputStyles.textField,InputStyles.textFieldMd].join(" ")} onChange={(e)=> setName(e.target.value)} id="userName" placeholder=""/>
 										</div>
 									<div className="col-12">
 										<label htmlFor="email" className="form-label">Email Address</label>
@@ -115,6 +126,7 @@ export default function AdminModal(props){
                    </div> 
 									<div className="col-12">
 										<Button 
+											updateUser={()=>handleUserUpdate()}
 										label={props.label}
 										type={[ButtonStyles.btn,ButtonStyles.mdBtn,ButtonStyles.primary].join(" ")}
 										/>

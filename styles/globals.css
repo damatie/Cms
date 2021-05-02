@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contentContainer{
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 1px auto;
   background:none;
 }
@@ -140,4 +140,19 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.activeParent{
+	/* display:none !important ; */
+  background: #FF0000;
+}
+
+
+.navChildToggle{
+  height:0px;
+  transition: height 2s;
+}
+
+
+:disabled{
+  background: rgb(241, 241, 241) !important;
+}
 
