@@ -59,4 +59,4 @@ const getCookieFromServer = (key, req) => {
   return Token;
  }
 
-
+export default Auth;
