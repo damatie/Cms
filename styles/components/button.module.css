@@ -42,11 +42,28 @@
 }
 
 .mdBtn{
-	padding: 10px 10px;
+	padding: 6px 10px;
 	font-size: 14px;
 	border-radius: 8px;
 	border:none !important;
 	outline: none;
 }
+
+.lgBtn{
+	padding: 10px 20px;
+	font-size: 15px;
+	border-radius: 8px;
+	border:none !important;
+	outline: none;
+}
+
+.xlgBtn{
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 8px;
+	border:none !important;
+	outline: none;
+}
+
 
 

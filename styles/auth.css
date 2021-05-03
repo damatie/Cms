@@ -9,8 +9,9 @@
   max-width: 500px;
   background: whitesmoke;
   margin: auto;
-  position: relative;
-  top: 200px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  
 }
 
 

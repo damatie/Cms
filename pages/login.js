@@ -82,7 +82,7 @@ useEffect( () => {
                 <input name="password" type="password" placeholder="Password"  value={password}  onChange={(e)=> setPassword(e.target.value)} className={[InputStyles.textField,InputStyles.textFieldMd].join(" ")} />
                 </div>
                 
-                 <button id=" LoginBtn"type="button" className={[ButtonStyles.btn,ButtonStyles.mdBtn,ButtonStyles.primary].join(" ")} onClick={()=>LoginTo()}> Admin Login</button>
+                 <button id=" LoginBtn" type="button" className={[ButtonStyles.btn,ButtonStyles.lgBtn,ButtonStyles.primary].join(" ")} onClick={()=>LoginTo()}> Admin Login</button>
                
               </div>
             </form>

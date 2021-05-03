@@ -151,8 +151,34 @@ body::-webkit-scrollbar-thumb {
   transition: height 2s;
 }
 
-
 :disabled{
   background: rgb(241, 241, 241) !important;
 }
 
+/* Not LoggedIn */
+
+.securePage{
+  width: 100%;
+  margin: 0px;
+  padding:0px ;
+  text-align: center !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* background: red; */
+}
+
+.securePage i{
+  font-size: 150px !important;
+  color: #91C848;
+}
+.securePage h1{
+  margin: 10px 0px;
+  font-weight: 900;
+}
+
+.securePage a{
+  text-decoration: none !important;
+}

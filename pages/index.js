@@ -1,21 +1,8 @@
 import Layout from '../components/CmsLayout.js'
 import TopDateFilter from '../components/DateFilterTop.js'
 import StatBoxStyles from '../styles/components/statBox.module.css'
-import InputStyles from '../styles/components/input.module.css'
-import {useState,useEffect} from 'react'
-import {myCookie,deleteCookie,getCookie, Host,AuthToken,checkIfLoggedIn} from './utils/Auth'
-import  Router  from 'next/router'
-
 
 export default function Dashboard(){
-
-	useEffect( () => {
-		if(!checkIfLoggedIn()){
-			Router.push("/login")
-		}else{
-			Router.push("/")
-		}		
-	},[])
 	return(
 		
 		<Layout>

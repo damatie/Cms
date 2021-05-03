@@ -12,7 +12,7 @@ import ButtonStyles from '../styles/components/button.module.css'
 import UserTableStyles from '../styles/components/usersTable.module.css'
 import {useEffect, useState} from 'react'
 import * as cookie from 'cookie'
-import {myCookie,deleteCookie,getCookie, Host,checkIfLoggedIn} from './utils/Auth'
+import {Host} from './utils/Auth'
 
 import  Router  from 'next/router'
 
@@ -61,16 +61,7 @@ export default function AllUsers({users}){
 	}).length;
 	// console.log(blockedUsers)
 	
-	useEffect( () => {
-		if(!checkIfLoggedIn()){
-			Router.push("/login")	
-		}else{
-			null
-		}
-		
-			
-		
-  }, [])
+
 	return(
 		<Layout>
 				

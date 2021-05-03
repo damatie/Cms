@@ -1,8 +1,21 @@
 import Head from 'next/head'
 import SideNav from './NavSide.js'
 import TopNav from './NavTop.js'
+import {useState,useEffect} from 'react'
+import {checkIfLoggedIn} from '../pages/utils/Auth'
+import ButtonStyles from '../styles/components/button.module.css'
+import  Router  from 'next/router'
 export default function Layout({ children }) {
-	
+	const [page, setPage] = useState("")
+	useEffect( () => {
+		if(checkIfLoggedIn()){
+			// Router.push("/login")
+			setPage('LoggedIn')
+		}else{
+			setPage('LoggedOut')
+		}
+		
+	})
 	return (
 		<div>
 				<Head>
@@ -16,11 +29,23 @@ export default function Layout({ children }) {
 		</Head>
 		
 		<main>
+		{(page=="LoggedOut")?  <div className="container">
+			<div className="row securePage">
+			<div className="col-12 icon"><i className="las la-lock"></i></div>
+			<div className="col-12 "><h1>Access Denied (Not loggedin!)</h1></div> 
+			<div className="col-12 "> <a  href="/login" id=" LoginBtn"type="button" className={[ButtonStyles.btn,ButtonStyles.xlgBtn,ButtonStyles.primary].join(" ")}> Click To Login</a></div>
+			</div> 
+		</div> : null}
+
+		{(page=="LoggedIn")?  <> 
+		
 			<SideNav></SideNav>
 			<div className="mainContentWrapper">
 				<TopNav></TopNav>
 			{children}
 			</div> 
+		</> :null}
+			
 			</main>
 
 		{/* CDN JS */}
